@@ -1,0 +1,15 @@
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        int sum=0;
+        for(int i=0;i<nums.length-2;i++)
+        {
+            sum=nums[i]+nums[i+1]+nums[i+2];
+            if((sum==target) || (sum==target-1) || (sum==target+1))
+               {
+                   break;
+               }
+        }
+               return sum;
+        
+    }
+}
